@@ -7,12 +7,12 @@
 
  ![image](https://github.com/nigly/docker_tars/blob/master/images/1.png)
 
-    
-
+    
+安装docker
 启动 docker
-1、
 
-    docker pull centos:7
+1、
+    docker pull centos:7
     
 2、
 
@@ -36,9 +36,11 @@
 5、
 
     --固定ip
+    
     docker network create --subnet=172.18.0.0/16 shadownet
     
     -- 固定容器ip 172.18.0.2
+    
     docker run --privileged -d -p 10022:22 -p 33066:3306 -p 18080:8080 --net shadownet --ip 172.18.0.2 local/tars:1.0 /usr/local/sbin/run.sh /usr/sbin/init
     ssh login
     ssh root@192.168.5.103 -p 10022
