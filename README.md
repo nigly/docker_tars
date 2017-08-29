@@ -11,12 +11,15 @@
 
 启动 docker
 1、
+
     docker pull centos:7
     
 2、
+
     cd ./centos7
     docker build --rm -t local/centos:7 .
 3、
+
     cd ./sshcentos7
     docker build --rm -t local/sshdcentos:7 .
 
@@ -26,10 +29,12 @@
     password:147258
 
 4、
+
     cd ./tars
     docker build --rm -t local/tars:1.0 .
 
 5、
+
     --固定ip
     docker network create --subnet=172.18.0.0/16 shadownet
     
