@@ -2,8 +2,8 @@
 
 
 
-    服务器没有资源一直跑tars ，tars 在mac 环境也是伤脑筋，刚好又学了docker 一点皮毛 干脆就在上面搭了个环境，在linux centos 7 下试过搭建了几次tars环境了，该注意的点也被坑过，幸好终于能在 docker 给跑了起来
-    
+    服务器没有足够的资源跑tars ，而tars在ox 下有些坑填不上，刚好又进了docker坑，新手上路，学了一点皮毛干脆（zhuang bi）就在上面搭了个环境，在linux centos 7 下试过搭建了几次tars环境了，该注意的点也被坑过，庆幸能在 docker 给跑了起来了
+    不过好像docker hub 上已经有tars 的docker 版本了，自当学习的，搞完还得去围观学习别人是怎么整的，仰慕一下。
 
 
  ![image](https://github.com/nigly/docker_tars/blob/master/images/1.png)
@@ -69,6 +69,19 @@ ssh root@192.168.5.103 -p 10022
         
 ```
 
+192.168.5.103 为当前mac 的ip 根据 自己mac 的ip来变更修改吧
+
+至此 可以ssh 登录到centos系统
+
+还得继续，一些mysql的权限配置，启动没在Dockerfile 里面配置（因为我不会 <_>  ）
+
+```Bash
+
+# /etc/init.d/mysqld start
+Starting MySQL. SUCCESS! 
+-- 启动完成啦
+
+```
 
 
 
