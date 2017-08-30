@@ -4,6 +4,8 @@
 
     服务器没有足够的资源跑tars ，而tars在ox 下有些坑填不上，刚好又进了docker坑，新手上路，学了一点皮毛干脆（zhuang bi）就在上面搭了个环境，在linux centos 7 下试过搭建了几次tars环境了，该注意的点也被坑过，庆幸能在 docker 给跑了起来了
     不过好像docker hub 上已经有tars 的docker 版本了，自当学习的，搞完还得去围观学习别人是怎么整的，仰慕一下。
+    
+
 
 
  ![image](https://github.com/nigly/docker_tars/blob/master/images/1.png)
@@ -127,5 +129,14 @@ cd /usr/local/app/tars
 
 
 至此 坑就先填到这里吧
+
+觉得还可以给个star吧
+
+
+若干xxxx后
+
+在docker hub上面搜还是一把把的，对比才知道，都想把自己埋了，学习了
+啊哈哈啊哈哈哈 
+https://github.com/panjen/docker-tars.git
 
 
