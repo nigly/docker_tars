@@ -2,11 +2,30 @@
 
 
 
-服务器没有资源一直跑tars ，tars 在mac 环境也是伤脑筋，刚好又学了docker 一点皮毛 干脆就在上面搭了个环境，在linux centos 7 下跑了几次tars 了，所以用了3天 把 docker 给跑了起来 
+    服务器没有资源一直跑tars ，tars 在mac 环境也是伤脑筋，刚好又学了docker 一点皮毛 干脆就在上面搭了个环境，在linux centos 7 下试过搭建了几次tars环境了，该注意的点也被坑过，幸好终于能在 docker 给跑了起来
+    
 
 
  ![image](https://github.com/nigly/docker_tars/blob/master/images/1.png)
 
+
+动手前 
+```Bash
+
+cd ./sshcentos7 
+git clone https://github.com/alibaba/AliSQL.git
+
+maven jdk 等下载对应版本或者其他版本，但需要修改Dockerfile 
+
+
+cd ./tars 
+git clone https://github.com/Tencent/Tars.git
+
+resin 等下载对应版本或者其他版本，但需要修改Dockerfile 
+
+```
+    
+    
 
 #Docker 
 
