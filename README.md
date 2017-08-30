@@ -81,14 +81,46 @@ ssh root@192.168.5.103 -p 10022
 Starting MySQL. SUCCESS! 
 -- 启动完成啦
 
+# cd /usr/local/mysql/bin
+# ./mysql -u root -p ##回车
+
+输入：
+grant all on *.* to 'root'@'%' identified by '123456' with grant option;
+flush privileges;
+ok 可以远程连接了；
+
+继续 本地连接密码等
+grant all on *.* to 'root'@'localhost' identified by '123456' with grant option;
+grant all on *.* to 'root'@'172.18.0.2' identified by '123456' with grant option;
+flush privileges;
+
+tars 里面提供的sql脚本需要人手去自行 这个坑 有时间再去填了 ^@^
+
+
 ```
 
+手工自行完 sql 后 
+
+启动 resin ，启动前 需要修改resin.xml 项目指向 在docker build 之前 把resin.xml 修改了就不用这一步了 
+
+tars 里面有些地方需要替换ip 这里我全部用的 172.18.0.2 你可以根据需要 build 之前作出修改 
 
 
-    
-    
-    
+访问 http://192.168.5.103:18080/ 
+注意要改成本机的ip
+
+继续 启动 tars_install.sh
+```Bash
+
+cd /usr/local/app/tars
+./tars_install.sh
+
+```
+
+注意 tars_install.sh 后 tarsnotify 为 inactive 状态 
+你需要把 tarsnotify.tgz 上传启动才可以 
 
 
-待整理
+至此 坑就先填到这里吧
+
 
