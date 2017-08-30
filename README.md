@@ -106,6 +106,10 @@ tars 里面提供的sql脚本需要人手去自行 这个坑 有时间再去填�
 tars 里面有些地方需要替换ip 这里我全部用的 172.18.0.2 你可以根据需要 build 之前作出修改 
 
 
+# 更多操作请参考 https://github.com/Tencent/Tars/ 提供的帮助文档
+
+
+
 访问 http://192.168.5.103:18080/ 
 注意要改成本机的ip
 
@@ -119,6 +123,7 @@ cd /usr/local/app/tars
 
 注意 tars_install.sh 后 tarsnotify 为 inactive 状态 
 你需要把 tarsnotify.tgz 上传启动才可以 
+具体操作 请查看 https://github.com/Tencent/Tars/ 提供的帮助文档
 
 
 至此 坑就先填到这里吧
