@@ -12,7 +12,9 @@
 启动 docker
 
 1、
-    docker pull centos:7
+···
+docker pull centos:7
+···
     
 2、
 
